@@ -1,12 +1,12 @@
 <?php
 
-namespace Pierrocknroll\LavarelPassportPurgeCommand;
+namespace gpibarra\LavarelPassportPurgeCommand\app\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 
-class PurgeOldTokens extends Command
+class PurgeOldTokensCommand extends Command
 {
     CONST DEFAULT_DAYS = 30;
 
