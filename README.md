@@ -4,13 +4,13 @@ This command purge expired access/refresh tokens for Laravel Passport to not ove
 ## Installation
 * Install the command with composer :
 ```
-composer require "pierrocknroll/lavarel-passport-purge-command @dev"
+composer require "gpbarra/lavarel-passport-purge-command @dev"
 ```
 
-* Add the command to your /app/console/Kernel.php in the $commands array :
+* Add the command to your /config/app.php in the providers array or discover package in Laravel ^5.5:
 ``` 
-protected $commands = [
-    \Pierrocknroll\LavarelPassportPurgeCommand\PurgeOldTokens::class
+'providers' => [
+    \gpbarra\LavarelPassportPurgeCommand\LavarelPassportPurgeCommandServiceProvider::class
 ];
 ```
 
